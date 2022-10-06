@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Hangman</h1>
+    </header>
+    <main>
+    <div class="container">
+        <!--organizing picture, letters in one container -->
+        <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+        <div class="text-center">
+        <img id='hangmanPic' src="./images/0.jpg" alt="">
+        <p>Guess the Programming Language:</p>
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        <div id="keyboard"></div>
+        <button class="btn btn-info" onClick="reset()">Play Again</button>
+        </div> 
+    </div>
+    </main>
+    <footer>
+        <section>
+        <h4 id="footer-name"></h4>
+        <p>&copy;2021, All rights reserved</p>
+        <p id="email"> <!--email address is projected by script--></p>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
